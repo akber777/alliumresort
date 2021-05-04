@@ -2,6 +2,17 @@
   position: relative;
   padding: 100px 0;
 
+  &__slider {
+    h4 {
+      text-align: center;
+      color: #006068;
+      font-family: "Freight Big Pro";
+      font-weight: 700;
+      font-size: 40px;
+      margin-bottom: 38px;
+    }
+  }
+
   .owl-nav {
     position: absolute;
     display: block !important;

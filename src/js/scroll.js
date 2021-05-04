@@ -3,11 +3,16 @@ $(document).ready(function () {
     let top = $(this).scrollTop();
 
     if (top > 300) {
-      $(".noHeight").addClass("fixedActive");
-      $('.webHeader .header__toolsBox').hide()
+      $(".home").addClass("importantRelative");
+      $("header").addClass("inlineHeader");
+      $("header").addClass("fixedTop");
     } else {
-      $(".noHeight").removeClass("fixedActive");
-      $('.webHeader .header__toolsBox').show()
+      $(".home").removeClass("importantRelative");
+      $("header").removeClass("fixedTop");
+
+      if (window.location.pathname === "/") {
+        $("header").removeClass("inlineHeader");
+      }
     }
   });
 });
