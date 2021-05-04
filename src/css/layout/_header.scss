@@ -1,0 +1,416 @@
+.header {
+  position: relative;
+  height: 100vh;
+
+  &__itemsLogoBox {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    img {
+      max-height: 92px;
+    }
+  }
+
+  &__flexHeader {
+    width: 100%;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: -43px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #b5b5b5;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    padding: 0 32px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__layerBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__itemsBox {
+    &.lastItems {
+      display: flex;
+      align-items: center;
+
+      button {
+        background-color: transparent;
+        border: none;
+        margin-right: 58px;
+      }
+
+      a {
+        background-color: #00afaa;
+        color: #fff;
+        font-size: 12px;
+        padding: 10px;
+        padding-bottom: 6px;
+
+        &.items {
+          background-color: transparent !important;
+          border: none !important;
+          margin-right: 58px !important;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    &--buttons {
+      margin-left: 57px;
+      button {
+        border: none;
+        background-color: transparent;
+
+        &:first-child {
+          margin-right: 50px;
+        }
+      }
+    }
+
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      color: #fff;
+
+      &.noAfter {
+        &:after {
+          display: none;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        right: -18px;
+        width: 1px;
+        height: 58%;
+        background-color: #fff;
+        top: 46%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      * {
+        font-family: "Mark Pro Light" !important;
+      }
+
+      span {
+        font-size: 9px;
+        color: #fff;
+        margin-left: 12px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 37px;
+      }
+
+      svg {
+        margin-top: -16px;
+        margin-right: 10px;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+
+  &__imgBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__navBox {
+    position: relative;
+    z-index: 5;
+    margin-top: 76px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+
+    span {
+      a {
+        font-family: "Freight Big Pro";
+        font-weight: bold;
+        color: #fff;
+        font-size: 18px;
+      }
+      position: relative;
+
+      .subMenu{
+        display: none;
+      }
+      
+
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        transition: all 0.4s cubic-bezier(0.63, 0.18, 0, 1.03);
+      }
+
+      &:hover {
+        .subMenu{
+          display: flex;
+        }
+
+        &:after {
+          transition: all 0.4s cubic-bezier(0.63, 0.18, 0, 1.03);
+          width: 100%;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 36px;
+      }
+    }
+  }
+
+  &__textBox {
+    position: absolute;
+    z-index: 3;
+    width: 511px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    h1 {
+      font-family: "Freight Big Pro";
+      font-weight: bold;
+      font-size: 60px;
+      white-space: pre-line;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: "Mark Pro Regular";
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+
+  &__cookieBox {
+    position: relative;
+    background-color: #006068;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 32px;
+
+    button {
+      position: absolute;
+      right: 32px;
+      background-color: transparent;
+      border: none;
+    }
+
+    p {
+      display: inline-flex;
+      align-items: center;
+      color: #fff;
+      margin-bottom: 0;
+      font-size: 13px;
+      font-style: italic;
+
+      span {
+        display: inline-flex;
+        font-family: "Mark Pro Medium";
+        font-style: normal;
+        margin-right: 5px;
+      }
+
+      svg {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  // tools icons
+  &__toolsFlex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 0 145px;
+  }
+
+  &__toolsBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 5555;
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 33px;
+        }
+      }
+    }
+
+    &--right {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 127px;
+      width: 1104px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        color: #fff;
+        font-size: 14px;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__animateBox {
+    position: absolute;
+    bottom: 34px;
+    z-index: 555;
+  }
+
+  &__container {
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 30px;
+
+    .header__flexHeader:after {
+      background-color: #006068;
+    }
+
+    .lastItems {
+      a {
+        background-color: #006068;
+        color: #fff !important;
+      }
+    }
+
+    p {
+      color: #006068 !important;
+    }
+
+    a {
+      color: #006068 !important;
+
+      &:after {
+        background-color: #006068;
+      }
+    }
+
+    span {
+      color: #006068 !important;
+    }
+  }
+}
+
+.inlineHeader {
+  position: relative;
+  height: 900px;
+
+  &__textBox {
+    position: absolute;
+    z-index: 5;
+    top: 93px;
+    width: 605px;
+
+    h1 {
+      color: #006068;
+      font-weight: bold;
+      font-family: "Freight Big Pro";
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: "Mark Pro Regular";
+      color: #006068;
+    }
+  }
+
+  &___imageBox {
+    position: relative;
+    height: 640px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.8s;
+    }
+  }
+}

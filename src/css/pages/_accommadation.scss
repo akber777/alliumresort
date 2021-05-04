@@ -1,0 +1,29 @@
+.accomadation {
+  .offers__wrapper {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .offers__items {
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      align-items: center;
+      .offers__items--right {
+        padding-left: 0;
+      }
+    }
+
+    &:nth-child(even) {
+      background-position: right 157px bottom -5px;
+    }
+
+    padding: 100px 179px;
+  }
+
+  .offers__buttonsBox {
+    a {
+      color: #fff;
+      min-width: 180px;
+    }
+  }
+}

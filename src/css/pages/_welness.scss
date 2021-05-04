@@ -1,0 +1,46 @@
+.welness__container {
+  padding: 80px 0 !important;
+
+  .owl-nav{
+    top: 35% !important;
+  }
+
+  .welcome__title {
+    padding-bottom: 50px;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+}
+
+.welness__dining {
+  background-color: #f5f5f5;
+  min-height: 655px !important;
+
+  .dining__left {
+    width: 60%;
+
+    .luxry__left {
+      padding-right: 370px;
+    }
+  }
+
+  .dining__right {
+    width: 40%;
+
+    .welcome__sliderImg {
+      height: 400px;
+    }
+  }
+}
+
+.welness__imgBox {
+  overflow: hidden;
+  transition: all 0.9s;
+
+  img {
+    width: 100%;
+    transition: all 0.9s;
+  }
+}

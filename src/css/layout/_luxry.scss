@@ -1,0 +1,56 @@
+.luxry {
+  background-color: #f5f5f5;
+  padding: 64px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      img {
+        transition: all 1s;
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      transition: all 1s;
+      max-height: 527px;
+    }
+  }
+
+  &__left {
+    width: 50%;
+    padding-right: 140px;
+
+    h4 {
+      color: #006068;
+      font-family: "Freight Big Pro";
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    p {
+      font-family: "Mark Pro Regular";
+      font-size: 16px;
+    }
+
+    a {
+      display: inline-flex;
+      background-color: #006068;
+      width: 180px;
+      height: 45px;
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      font-family: "Mark Pro Medium";
+      font-size: 12px;
+      padding-top: 3px;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,33 @@
+// ./src icinde css icinde yaradilan dosyalarin yolun buraya elave ediriy
+
+// pages
+@import "./pages/contact";
+@import "./pages/offers";
+@import "./pages/accommadation";
+@import "./pages/diningPages";
+@import "./pages/welness";
+@import "./pages/experiences";
+@import "./pages/about";
+@import "./pages/map";
+
+// layout
+@import "./layout/header";
+@import "./layout/welcome";
+@import "./layout/luxry";
+@import "./layout/footer";
+@import "./layout/leftmenu";
+@import "./layout/life";
+@import "./layout/resortAbout";
+@import "./layout/bodrum";
+@import "./layout/dining";
+
+// components
+@import "./components/btn";
+@import "./components/card";
+
+
+// abstract
+@import "./abstract/mixin";
+@import "./abstract/base";
+@import "./abstract/font";
+

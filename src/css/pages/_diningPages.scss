@@ -1,0 +1,81 @@
+.diningPage {
+  .offers__items {
+    flex-direction: row-reverse;
+    padding: 100px 40px;
+
+    .offers__items--right {
+      h4 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .offers__buttonsBox {
+      a {
+        min-width: 180px;
+        color: #fff;
+      }
+    }
+  }
+
+  .resortAbout {
+    justify-content: flex-start;
+  }
+
+  .resortAbout__wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .resortAbout__info {
+    padding-right: 0;
+    padding-left: 115px;
+  }
+
+  .welcome__sliderImg {
+    height: auto !important;
+    max-height: 527px;
+  }
+
+  .life__wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .life__left {
+    margin-right: 0;
+    margin-left: 128px;
+
+    .life__linkBox {
+      padding: 0 20px;
+
+      > a {
+        display: inline-flex;
+        background-color: #006068;
+        width: 180px;
+        height: 45px;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        font-family: "Mark Pro Medium";
+        font-size: 12px;
+        padding-top: 3px;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .luxry {
+    background-color: #f5f5f5;
+    margin-bottom: 143px;
+
+    .luxry__left{
+
+        a{
+            margin-top: 45px;
+        }
+
+    }
+
+    .luxry__right {
+      margin-bottom: -143px;
+    }
+  }
+}

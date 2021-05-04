@@ -1,0 +1,47 @@
+.dining {
+  min-height: 910px;
+  background-repeat: no-repeat;
+  background-position: left bottom -5px;
+  background-size: 817px;
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__left {
+    width: 40%;
+    display: inline-flex;
+    align-items: center;
+
+    .luxry__left {
+      padding-right: 170px;
+      width: unset;
+      color: #505050;
+      line-height: 24px;
+    }
+  }
+
+  &__right {
+    width: 60%;
+
+    .welcome__sliderImg {
+      height: 300px;
+    }
+
+    .welcome__sliderTextBox {
+      padding: 0;
+      padding-top: 25px;
+
+      p {
+        display: -webkit-box;
+        line-height: 24px;
+        height: 147px;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}

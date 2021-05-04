@@ -1,0 +1,42 @@
+.mapPage {
+  &__wrapper {
+    display: flex;
+  }
+
+  &__left {
+    width: 50%;
+    padding-right: 181px;
+
+    h4 {
+      color: #006068;
+      font-family: "Freight Big Pro";
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+    p {
+      font-family: "Mark Pro Regular";
+      font-size: 16px;
+      margin-top: 49px;
+      color:#505050;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    height: 500px;
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__padBox {
+    padding-left: 171px;
+  }
+}
+
+.mapHeader {
+  height: auto !important;
+}

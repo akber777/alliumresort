@@ -1,0 +1,69 @@
+.life {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: left bottom -5px;
+  padding: 182px 0;
+
+  &__imgBox {
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    display: flex;
+    padding: 0 180px;
+
+    &:hover {
+      .life__right {
+        img {
+          transform: scale(1.025);
+        }
+      }
+
+      .life__left {
+        img {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+
+  &__left {
+    width: 582px;
+    margin-right: 128px;
+
+    img {
+      max-width: 100%;
+      height: 576px;
+      object-fit: cover;
+      transition: all 0.9s;
+    }
+
+    p {
+      font-family: "Mark Pro Regular";
+      font-size: 16px;
+      color: #505050;
+      margin-top: 61px;
+      padding: 0 20px;
+    }
+  }
+
+  &__right {
+    width: calc((100% - 445px) - 128px);
+
+    h4 {
+      font-family: "Freight Big Pro";
+      font-size: 60px;
+      line-height: 52px;
+      margin-bottom: 48px;
+      color: #006068;
+      text-transform: uppercase;
+    }
+
+    img {
+      height: 795px;
+      object-fit: cover;
+      transition: all 0.9s;
+      width: 100%;
+    }
+  }
+}

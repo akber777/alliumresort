@@ -1,0 +1,22 @@
+{
+  "name": "gulpSarter",
+  "description": "",
+  "main": "main.js",
+  "author": {
+    "Name": "AKBER",
+    "Lastname": "AKHMEDZADEH",
+    "Github": "akber777"
+  },
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "https://github.com/necolas/normalize.css.git#^8.0.1",
+    "Lightpick": "https://github.com/wakirin/Lightpick.git#^1.5.0",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
+  }
+}

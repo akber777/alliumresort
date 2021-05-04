@@ -1,0 +1,229 @@
+body {
+  padding: 0;
+  font-family: "Mark Pro Medium" !important;
+  position: relative;
+}
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  outline: 0 !important;
+  text-decoration: none !important;
+}
+
+.myPad {
+  padding: 0 145px;
+}
+
+@media (max-width: 722px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 745px) {
+  .container_header {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1380px;
+  }
+}
+
+@media (min-width: 1458px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1560px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1610px;
+  }
+}
+
+.noHeight {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: auto !important;
+  transition: all 0.3s;
+  transform: translateY(-100%);
+  z-index: 555555;
+  width: 100%;
+  background-color: #fff;
+
+  .header__topFlexBox {
+    padding: 32px 61px;
+  }
+
+  .header__accountBox {
+    color: #006068 !important;
+
+    a {
+      color: #006068 !important;
+    }
+  }
+
+  .header__langBox {
+    background-color: #f3f2ef;
+
+    a {
+      color: #b6a269 !important;
+    }
+  }
+}
+
+.fixedActive {
+  transform: translateY(0);
+  transition: all 0.3s;
+}
+
+.activeLink {
+  transition: all 0.5s !important;
+
+  &:hover {
+    transition: all 0.5s !important;
+    background-color: #00afaa !important;
+    color: #fff !important;
+  }
+}
+
+.activeLinkHeader {
+  transition: all 0.5s !important;
+
+  &:hover {
+    transition: all 0.5s !important;
+    background-color: #006068 !important;
+    color: #fff !important;
+  }
+}
+
+.resortAbout__wrapper {
+  &:hover {
+    img {
+      transition: all 0.8s;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.mapContainer {
+  height: 980px;
+}
+
+nav {
+  position: relative;
+}
+
+.subMenu {
+  position: absolute;
+  left: -226px;
+  min-width: 1248px;
+  background-color: #fff;
+  padding: 58px;
+  display: flex;
+  z-index: 55555;
+  top: 19px;
+
+  &__left {
+    width: 50%;
+    position: relative;
+    margin-right: 30px;
+
+    a {
+      &:hover img {
+        transition: all 0.8s;
+        transform: scale(1.05);
+      }
+    }
+
+    &:nth-child(odd) {
+      &:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 15px;
+        width: 1px;
+        height: 100%;
+        background-color: #006068;
+      }
+    }
+
+    h4 {
+      color: #006068;
+      font-family: "Freight Big Pro";
+      margin-bottom: 35px;
+      font-weight: bold;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    // align-items: center;
+    margin-bottom: 25px;
+
+    img {
+      width: 250px;
+      object-fit: cover;
+      transition: all 0.8s;
+    }
+  }
+
+  &__info {
+    position: relative;
+    padding: 25px;
+    h5 {
+      font-family: "Mark Pro Medium";
+      font-size: 13px;
+      color: #006068;
+    }
+
+    p {
+      color: #505050 !important;
+      font-family: "Mark Pro Regular";
+      font-size: 13px;
+    }
+  }
+}
