@@ -111,11 +111,11 @@ function compileJs() {
 
 function imageCompile() {
   return src(path.src.img)
-    .pipe(
-      imagemin({
-        use: [imageminMozjpeg()],
-      })
-    ) // imagemin vasitesiyle src/img icinde olan butun sekiller resize edilerey olcusu kicildilir
+    // .pipe(
+    //   imagemin({
+    //     use: [imageminMozjpeg()],
+    //   })
+    // ) // imagemin vasitesiyle src/img icinde olan butun sekiller resize edilerey olcusu kicildilir
     .pipe(gulp.dest(path.build.img));
 }
 

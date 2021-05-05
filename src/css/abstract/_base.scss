@@ -330,6 +330,89 @@ nav {
   }
 }
 
+.inlineHeaderHome {
+  height: auto !important;
+  background-color: #fff !important;
+
+  .circle {
+    svg {
+      circle {
+        fill: #006068 !important;
+      }
+    }
+  }
+
+  .lastItems {
+    > a {
+      background-color: #006068 !important;
+      color: #fff !important;
+    }
+
+    svg {
+      fill: #006068 !important;
+
+      #Ellipse_32 {
+        stroke: #006068 !important;
+      }
+
+      line {
+        stroke: #006068 !important;
+      }
+    }
+  }
+
+  .header__itemsBox--buttons{
+    svg{
+      circle{
+        fill: #006068 !important;
+      }
+    }
+  }
+
+  .header__itemsBox {
+    svg {
+      path {
+        fill: #006068;
+      }
+    }
+
+    a {
+      color: #006068;
+
+      &:after {
+        background-color: #006068;
+      }
+
+      p {
+        color: #006068;
+      }
+
+      span {
+        color: #006068;
+      }
+    }
+  }
+
+  .header__animateBox {
+    display: none;
+  }
+
+  .header__textBox {
+    display: none;
+  }
+
+  .header__navBox {
+    padding-bottom: 15px;
+    margin-top: 58px;
+
+    span {
+      a {
+        color: #006068;
+      }
+    }
+  }
+}
+
 .importantRelative {
   position: relative !important;
 }

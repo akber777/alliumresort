@@ -4,15 +4,13 @@ $(document).ready(function () {
 
     if (top > 300) {
       $(".home").addClass("importantRelative");
-      $("header").addClass("inlineHeader");
+      $("header").addClass("inlineHeaderHome");
       $("header").addClass("fixedTop");
     } else {
       $(".home").removeClass("importantRelative");
       $("header").removeClass("fixedTop");
 
-      if (window.location.pathname === "/") {
-        $("header").removeClass("inlineHeader");
-      }
+      $("header").removeClass("inlineHeaderHome");
     }
   });
 });
