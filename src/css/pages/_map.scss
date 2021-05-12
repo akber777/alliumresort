@@ -1,11 +1,25 @@
 .mapPage {
   &__wrapper {
     display: flex;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   &__left {
     width: 50%;
     padding-right: 181px;
+    padding-top: 50px;
+
+    @media (max-width: 1251px) {
+      padding-right: 50px;
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+      padding-right: 0;
+    }
 
     h4 {
       color: #006068;
@@ -18,13 +32,20 @@
       font-family: "Mark Pro Regular";
       font-size: 16px;
       margin-top: 49px;
-      color:#505050;
+      color: #505050;
     }
   }
 
   &__right {
     width: 50%;
     height: 500px;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      height: 250px;
+    }
 
     #map {
       width: 100%;
@@ -34,6 +55,15 @@
 
   &__padBox {
     padding-left: 171px;
+
+    @media (max-width: 1251px) {
+      padding-left: 50px;
+    }
+
+    @media (max-width: 992px) {
+      padding-left: 0;
+      padding: 0 20px;
+    }
   }
 }
 

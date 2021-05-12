@@ -2,6 +2,11 @@
   .offers__items {
     flex-direction: row-reverse;
     padding: 100px 40px;
+    margin-bottom: 100px;
+
+    @media(max-width:575px){
+      padding: 20px;
+    }
 
     .offers__items--right {
       h4 {
@@ -28,10 +33,14 @@
   .resortAbout__info {
     padding-right: 0;
     padding-left: 115px;
+
+    @media(max-width:992px){
+      padding-left: 0;
+    }
   }
 
   .welcome__sliderImg {
-    height: auto !important;
+    height: 235px !important;
     max-height: 527px;
   }
 
@@ -42,6 +51,14 @@
   .life__left {
     margin-right: 0;
     margin-left: 128px;
+
+    @media(max-width:992px){
+      margin-left: 31px;
+    }
+
+    @media(max-width:765px){
+      margin-left: 0px;
+    }
 
     .life__linkBox {
       padding: 0 20px;

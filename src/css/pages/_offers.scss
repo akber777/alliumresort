@@ -3,9 +3,22 @@
     position: relative;
     margin-top: -119px;
     z-index: 1;
+    padding: 0 70px;
+
+    @media (max-width: 1320px) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: 1210px) {
+      padding: 0;
+    }
   }
 
   &__title {
+    @media (max-width: 1320px) {
+      margin-bottom: 25px;
+    }
+
     label {
       position: relative;
       color: #006068;
@@ -16,7 +29,19 @@
       display: inline-flex;
       align-items: center;
 
+      @media (max-width: 992px) {
+        font-size: 25px;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 16px;
+      }
+
       &:not(:last-child) {
+        @media (max-width: 992px) {
+          margin-right: 5px !important;
+        }
+
         &:after {
           position: absolute;
           content: "";
@@ -30,6 +55,10 @@
           -ms-transform: translateY(-50%);
           -o-transform: translateY(-50%);
           transform: translateY(-50%);
+
+          @media(max-width:575px){
+            height: 26%;
+          }
         }
       }
 
@@ -50,6 +79,10 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 992px) {
+      margin-right: 5px;
+    }
+
     span {
       position: absolute;
       width: 7px;
@@ -66,10 +99,6 @@
     }
   }
 
-  &__wrapper {
-    padding: 0 70px;
-  }
-
   &__info {
     // margin-top: 27px;
   }
@@ -79,6 +108,10 @@
     padding: 38px 40px;
     background-position: right bottom -5px;
     background-repeat: no-repeat;
+
+    @media (max-width: 992px) {
+      flex-direction: column !important;
+    }
 
     &:hover {
       img {
@@ -90,19 +123,36 @@
     &:nth-child(odd) {
       padding-bottom: 125px;
       background-color: #f5f5f5;
+
+      @media (max-width: 992px) {
+        padding-bottom: 35px;
+      }
     }
 
-    margin-bottom: 127px;
+    margin-bottom: 20px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 37px;
+      padding: 0;
+    }
 
     &--left {
       width: 45%;
       overflow: hidden;
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
 
       img {
         width: 100%;
         height: 400px;
         object-fit: cover;
         transition: all 0.8s;
+
+        @media(max-width: 992px){
+          height: auto;
+        }
       }
     }
 
@@ -111,6 +161,11 @@
       padding: 0 49px;
       padding-top: 15px;
 
+      @media (max-width: 992px) {
+        width: 100%;
+        padding: 15px 0;
+      }
+
       h4 {
         font-family: "Freight Big Pro";
         font-size: 40px;
@@ -118,6 +173,15 @@
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 5px;
+
+        @media (max-width: 1320px) {
+          font-size: 30px;
+        }
+
+        @media (max-width: 992px) {
+          font-size: 24px;
+          text-align: center;
+        }
       }
     }
   }
@@ -127,6 +191,11 @@
       color: #505050;
       font-family: "Mark Pro Regular";
       font-size: 16px;
+
+      @media (max-width: 1320px) {
+        font-size: 12px;
+      }
+
     }
   }
 
@@ -134,7 +203,21 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+
     a {
+      @media (max-width: 992px) {
+        width: auto;
+        padding: 0;
+        margin-right: 0 !important;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+
       &:first-child {
         background-color: #006068;
         min-width: 180px;
@@ -147,6 +230,10 @@
         font-family: "Mark Pro Medium";
         font-size: 12px;
         margin-right: 30px;
+
+        @media (max-width: 1336px) {
+          min-width: 129px;
+        }
       }
 
       &:last-child {
@@ -161,6 +248,14 @@
         font-family: "Mark Pro Medium";
         font-size: 12px;
         margin-right: 30px;
+
+        @media (max-width: 1336px) {
+          min-width: 212px;
+        }
+
+        @media (max-width: 992px) {
+          padding-top: 16px !important;
+        }
 
         &:hover {
           border: none;

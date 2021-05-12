@@ -6,10 +6,11 @@ $(document).ready(function () {
       $(".home").addClass("importantRelative");
       $("header").addClass("inlineHeaderHome");
       $("header").addClass("fixedTop");
+      $('header').addClass('inlineHeaderHomeForFixed')
     } else {
       $(".home").removeClass("importantRelative");
       $("header").removeClass("fixedTop");
-
+      $('header').removeClass('inlineHeaderHomeForFixed')
       $("header").removeClass("inlineHeaderHome");
     }
   });

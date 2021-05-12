@@ -8,8 +8,8 @@ $(document).ready(function () {
       0: {
         items: 1,
       },
-      600: {
-        items: 3,
+      990: {
+        items: 1,
       },
       1000: {
         items: 3,
@@ -20,14 +20,14 @@ $(document).ready(function () {
   $(".resortAboutSlider").owlCarousel({
     loop: true,
     margin: 30,
-    nav: true,
+    nav: false,
     arrows: false,
     responsive: {
       0: {
         items: 1,
       },
       600: {
-        items: 2,
+        items: 1,
       },
       1000: {
         items: 2,
@@ -38,16 +38,16 @@ $(document).ready(function () {
   $(".diningSlider").owlCarousel({
     loop: true,
     margin: 30,
-    nav: true,
+    nav: false,
     arrows: false,
     responsive: {
       0: {
         items: 1,
       },
       600: {
-        items: 2,
+        items: 1,
       },
-      1000: {
+      1200: {
         items: 3,
       },
     },

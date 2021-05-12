@@ -1,0 +1,236 @@
+.arrival {
+  padding-top: 93px;
+
+  @media (max-width: 765px) {
+    padding-top: 30px;
+  }
+
+  &__info {
+    width: 600px;
+    padding-bottom: 93px;
+
+    @media (max-width: 765px) {
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    > h4 {
+      font-size: 40px;
+      font-family: "Freight Big Pro";
+      text-transform: uppercase;
+      color: #006068;
+      margin-bottom: 58px;
+
+      @media (max-width: 765px) {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &--title {
+      h4 {
+        font-family: "Mark Pro Medium";
+        font-size: 20px;
+        color: #006068;
+        text-transform: uppercase;
+
+        @media (max-width: 765px) {
+          font-size: 13px;
+        }
+      }
+
+      p {
+        color: #505050;
+        font-family: "Mark Pro Regular";
+        font-size: 16px;
+
+        @media (max-width: 765px) {
+          font-size: 10px;
+        }
+      }
+
+      span {
+        font-family: "Mark Pro Medium";
+        color: #fe4545;
+        font-size: 16px;
+        @media (max-width: 765px) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    padding: 127px 50px;
+    background-color: #f6f6f6;
+
+    @media (max-width: 992px) {
+      padding: 50px 20px;
+    }
+  }
+
+  &__wrapper {
+    padding: 0 350px;
+    display: flex;
+
+    @media (max-width: 1552px) {
+      padding: 0 150px;
+    }
+
+    @media (max-width: 1201px) {
+      padding: 0;
+    }
+
+    @media (max-width: 765px) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    width: 50%;
+
+    @media (max-width: 765px) {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @media (max-width: 765px) {
+      width: 100%;
+    }
+  }
+
+  &__date {
+    display: flex;
+
+    select {
+      width: 67px;
+      text-align: center;
+      font-family: "Mark Pro Medium";
+      font-size: 16px;
+      color: #a3c4c6;
+
+      &::placeholder {
+        text-align: center;
+        font-family: "Mark Pro Medium";
+        font-size: 16px;
+        color: #a3c4c6;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        width: 100px;
+      }
+    }
+
+    input {
+      width: 67px;
+      text-align: center;
+      font-family: "Mark Pro Medium";
+      font-size: 16px;
+      color: #a3c4c6;
+
+      &::placeholder {
+        text-align: center;
+        font-family: "Mark Pro Medium";
+        font-size: 16px;
+        color: #a3c4c6;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        width: 100px;
+      }
+    }
+  }
+
+  &__contactItems {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      background-color: #006068;
+      border: none;
+      height: 38px;
+      padding: 0 15px;
+      margin-top: 10px;
+      color: #fff;
+      font-family: "Mark Pro Medium";
+      font-size: 16px;
+    }
+
+    input {
+      background-color: #eaefef;
+      border: none;
+      height: 38px;
+      padding: 0 15px;
+      margin-top: 10px;
+      color: #a3c4c6;
+    }
+
+    select {
+      background-color: #eaefef;
+      border: none;
+      height: 38px;
+      padding: 0 15px;
+      margin-top: 10px;
+      padding-right: 15px;
+      appearance: none;
+      font-size: 16px;
+      color: #a3c4c6;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 34px;
+    }
+
+    span {
+      color: #006068;
+      font-family: "Mark Pro Medium";
+      font-size: 16px;
+      width: 328px;
+
+      @media (max-width: 765px) {
+        width: 100%;
+      }
+    }
+
+    .width260 {
+      width: 260px;
+
+      @media (max-width: 765px) {
+        width: 100%;
+      }
+    }
+
+    .width158 {
+      width: 158px;
+      padding-left: 43px;
+
+      @media (max-width: 765px) {
+        width: 100%;
+      }
+    }
+
+    .widthAuto {
+      width: auto !important;
+    }
+  }
+}

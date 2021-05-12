@@ -1,0 +1,19 @@
+.about {
+  .luxry__wrapper {
+    // @media (max-width: 992px) {
+    //   flex-direction: column-reverse !important;
+    // }
+  }
+
+  .luxry .luxry__right {
+    margin-bottom: 0 !important;
+  }
+
+  .luxry {
+    margin-bottom: 50px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 31px;
+    }
+  }
+}

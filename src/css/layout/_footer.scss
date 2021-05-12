@@ -4,16 +4,68 @@
   padding-bottom: 114px !important;
   display: flex;
 
-  .header__toolsBox--left{
+  .header__toolsBox--music {
+    @media(max-width:992px){
+      display: none;
+    }
+  }
+
+  &__mob {
+    display: none;
+
+    @media (max-width: 992px) {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      margin-top: 15px;
+      font-size: 8px;
+    }
+
+    svg{
+      font-size: 10px;
+      margin-right: 5px;
+      margin-top: -4px;
+    }
+  }
+
+  @media (max-width: 1510px) {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    padding: 50px 20px !important;
+  }
+
+  .header__toolsBox--left {
     flex-direction: row-reverse;
 
-   .header__toolsBox--music{
-    margin-right: 33px;
-   }
+    .header__toolsBox--music {
+      margin-right: 33px;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 1510px) {
+      width: 109px;
+    }
+
+    @media (max-width: 992px) {
+      width: 70px;
+    }
   }
 
   &__left {
     width: 50%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -22,6 +74,14 @@
       font-family: "Freight Big Pro" !important;
       color: #fff;
       font-weight: bold;
+
+      @media (max-width: 1510px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 28px;
+      }
     }
 
     span {
@@ -30,8 +90,16 @@
       color: #fff;
       font-size: 20px;
       font-family: "Mark Pro Regular" !important;
-      
-      svg{
+
+      @media (max-width: 1510px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+
+      svg {
         margin-right: 14px;
       }
     }
@@ -41,6 +109,16 @@
     margin-top: 92px;
     display: flex;
     margin-bottom: 159px;
+    flex-direction: column;
+
+    @media (max-width: 1210px) {
+      margin-top: 52px;
+    }
+
+    @media (max-width: 992px) {
+      margin-bottom: 70px;
+      margin-top: 25px;
+    }
 
     form {
       display: flex;
@@ -55,22 +133,41 @@
       font-size: 28px;
       font-family: "Mark Pro Regular";
       padding: 0 21px;
+      border-radius: 0 !important;
+
+      @media (max-width: 1610px) {
+        width: 100%;
+      }
+
+      @media (max-width: 992px) {
+        height: 37px;
+        font-size: 12px;
+      }
 
       &::placeholder {
         font-size: 23px;
         color: #006068;
         font-family: "Mark Pro Regular";
+
+        @media (max-width: 992px) {
+          font-size: 12px;
+        }
       }
     }
 
     button {
       font-family: "Mark Pro Regular";
-      background-color: #00AFAA;
+      background-color: #00afaa;
       width: 171px;
       height: 68px;
       border: none;
       font-size: 23px;
       color: #fff;
+
+      @media (max-width: 992px) {
+        height: 37px;
+        font-size: 12px;
+      }
     }
   }
 
@@ -85,8 +182,20 @@
       line-height: 37px;
       color: #fff;
 
+      @media (max-width: 1820px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 1510px) {
+        font-size: 13px;
+      }
+
       &:not(:last-child) {
         margin-right: 31px;
+
+        @media(max-width:992px){
+          margin-right: 10px;
+        }
       }
     }
   }
@@ -97,5 +206,12 @@
     align-items: flex-end;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-top: 25px;
+    }
   }
 }

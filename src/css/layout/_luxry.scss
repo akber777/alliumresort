@@ -6,6 +6,10 @@
     display: flex;
     align-items: center;
 
+    @media(max-width:675px){
+      flex-direction: column;
+    }
+
     &:hover {
       img {
         transition: all 1s;
@@ -16,23 +20,59 @@
     img {
       transition: all 1s;
       max-height: 527px;
+      object-fit: cover;
+      width: 100%;
+
+      @media(max-width:1201px){
+        max-height: 327px
+      }
     }
   }
 
   &__left {
     width: 50%;
     padding-right: 140px;
+    
+
+    @media(max-width:1201px){
+      padding-right: 50px;
+    }
+
+    @media(max-width:675px){
+      width: 100%;
+      padding-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 34px;
+    }
 
     h4 {
       color: #006068;
       font-family: "Freight Big Pro";
       font-weight: bold;
       font-size: 40px;
+      line-height: 52px;
+      margin-bottom: 21px;
+
+      @media(max-width:1201px){
+       font-size: 24px;
+      }
+
+      @media(max-width:675px){
+       text-align: center;
+      }
     }
 
     p {
       font-family: "Mark Pro Regular";
       font-size: 16px;
+
+      @media(max-width:675px){
+        text-align: center;
+        font-size: 12px;
+       }
     }
 
     a {
@@ -46,11 +86,22 @@
       font-family: "Mark Pro Medium";
       font-size: 12px;
       padding-top: 3px;
+      
     }
   }
 
   &__right {
     width: 50%;
     overflow: hidden;
+
+    @media(max-width:675px){
+      width: 100%;
+    }
+    
+    img{
+      @media(max-width:675px){
+        width: 100%;
+       }
+    }
   }
 }

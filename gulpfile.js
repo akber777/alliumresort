@@ -17,11 +17,11 @@ const browserSync = require("browser-sync").create();
 
 var path = {
   build: {
-    css: "build/css/",
-    js: "build/js/",
+    js: '../../../backend/A/alliumbodrum/themes/alliumbodrum/assets/js/',
+    css: '../../../backend/A/alliumbodrum/themes/alliumbodrum/assets/css/',
     html: "build/",
     img: "build/img/",
-    fonts: "build/fonts/",
+    fonts: "build/fonts/", 
     libs: "build/libs/",
   },
   src: {

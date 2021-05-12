@@ -1,12 +1,20 @@
 .welness__container {
   padding: 80px 0 !important;
 
-  .owl-nav{
+  @media (max-width: 991px) {
+    padding: 40px 0 !important;
+  }
+
+  .owl-nav {
     top: 35% !important;
   }
 
   .welcome__title {
     padding-bottom: 50px;
+
+    @media (max-width: 991px) {
+      padding-bottom: 0px;
+    }
 
     h1 {
       margin-top: 0;
@@ -21,16 +29,43 @@
   .dining__left {
     width: 60%;
 
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
     .luxry__left {
       padding-right: 370px;
+
+      @media (max-width: 1261px) {
+        padding-right: 50px;
+      }
+
+
+      @media(max-width:992px){
+        padding-right: 0;
+      }
     }
   }
 
   .dining__right {
     width: 40%;
 
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
     .welcome__sliderImg {
       height: 400px;
+
+      @media (max-width: 992px) {
+        height: auto;
+      }
+
+      img{
+        @media (max-width: 992px) {
+          height: auto;
+        }
+      }
     }
   }
 }

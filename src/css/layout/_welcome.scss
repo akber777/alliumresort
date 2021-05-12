@@ -2,21 +2,39 @@
   position: relative;
   padding: 100px 0;
 
+  @media (max-width: 992px) {
+    padding: 50px 0;
+  }
+
   &__slider {
-    h4 {
+    padding: 0 62px;
+
+    @media (max-width: 1201px) {
+      padding: 0 31px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 0px;
+    }
+
+    > h4 {
       text-align: center;
       color: #006068;
       font-family: "Freight Big Pro";
       font-weight: 700;
       font-size: 40px;
       margin-bottom: 38px;
+
+      @media (max-width: 730px) {
+        font-size: 24px;
+      }
     }
   }
 
   .owl-nav {
     position: absolute;
     display: block !important;
-    top: 50%;
+    top: 25%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -37,6 +55,12 @@
       background-position: center !important;
       background-size: 27% !important;
       transition: all 0.5s !important;
+
+      @media (max-width: 1102px) {
+        width: 32px;
+        height: 32px;
+        left: -50px;
+      }
 
       &:hover {
         transition: all 0.5s !important;
@@ -61,6 +85,12 @@
       background-size: 27% !important;
       transition: all 0.5s !important;
 
+      @media (max-width: 1102px) {
+        right: -50px;
+        width: 32px;
+        height: 32px;
+      }
+
       &:hover {
         transition: all 0.5s !important;
         background-color: #006068 !important;
@@ -70,6 +100,10 @@
       span {
         display: none;
       }
+    }
+
+    @media (max-width: 730px) {
+      display: none !important;
     }
   }
 
@@ -82,18 +116,34 @@
     align-items: center;
     padding-bottom: 100px;
 
+    @media (max-width: 1132px) {
+      width: 100%;
+      padding-bottom: 54px;
+    }
+
+    @media (max-width: 992px) {
+      margin-bottom: 15px;
+    }
+
     h1 {
       text-align: center;
       color: #006068;
       font-family: "Freight Big Pro";
       font-weight: bold;
       font-size: 40px;
+      width: 500px;
+
+      @media (max-width: 730px) {
+        font-size: 24px;
+        width: 100%;
+      }
     }
 
     p {
       color: #505050;
       text-align: center;
       font-family: "Mark Pro Light";
+      line-height: 24px;
     }
 
     a {
@@ -126,6 +176,14 @@
     transition: all 0.8s;
     overflow: hidden;
 
+    @media (max-width: 1474px) {
+      height: 295px;
+    }
+
+    @media (max-width: 1201px) {
+      height: 231px;
+    }
+
     img {
       transition: all 0.8s;
       height: 100%;
@@ -141,7 +199,9 @@
       color: #006068;
       font-family: "Freight Big Pro";
       font-weight: bold;
-      font-style: 20px;
+      font-size: 20px;
+      text-align: left;
+      height: 52px;
     }
 
     p {
@@ -154,11 +214,15 @@
       text-overflow: ellipsis;
       height: 118px;
       overflow: hidden;
+
+      @media (max-width: 992px) {
+        font-size: 12px;
+      }
     }
 
     a {
       display: inline-flex;
-      margin-top: 60px;
+      margin-top: 30px;
       background-color: #006068;
       width: 205px;
       height: 37px;
@@ -166,6 +230,10 @@
       justify-content: center;
       color: #fff;
       font-family: "Mark Pro Regular";
+
+      @media (max-width: 575px) {
+        margin-top: 30px;
+      }
     }
   }
 }

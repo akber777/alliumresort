@@ -59,7 +59,7 @@ body {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1500px;
+    max-width: 1460px;
   }
 }
 
@@ -123,6 +123,10 @@ body {
 .activeLink {
   transition: all 0.5s !important;
 
+  @media (max-width: 992px) {
+    height: 25px !important;
+  }
+
   &:hover {
     transition: all 0.5s !important;
     background-color: #00afaa !important;
@@ -151,6 +155,10 @@ body {
 
 .mapContainer {
   height: 980px;
+
+  @media (max-width: 992px) {
+    height: 300px;
+  }
 }
 
 nav {
@@ -229,7 +237,14 @@ nav {
 }
 
 .homeHeader {
-  height: 100vh !important;
+  // height: 100vh !important;
+  position: absolute;
+  width: 100%;
+  transition: all 0.8s;
+  z-index: 44444;
+  @media (max-width: 992px) {
+    height: 415px !important;
+  }
 }
 
 .colorF {
@@ -242,6 +257,10 @@ nav {
   }
 }
 
+.backColorF {
+  background-color: #fff !important;
+}
+
 .events {
   .life {
     padding-top: 70px !important;
@@ -249,15 +268,46 @@ nav {
 }
 
 .home {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
   height: 100vh;
+
+  @media (max-width: 992px) {
+    height: 415px !important;
+  }
 }
 
 .inlineHeader {
+  position: relative;
   height: auto !important;
   background-color: #fff !important;
+  transition: all 0.8s;
+
+  .header__itemsLogoBox {
+    svg {
+      path {
+        fill: #006068;
+      }
+    }
+  }
+
+
+  .header__mobBtnBox {
+    svg {
+      line {
+        stroke: #006068 !important;
+      }
+    }
+  }
+
+  .header__itemsBox--buttons {
+    svg {
+      circle {
+        fill: #006068 !important;
+      }
+    }
+  }
 
   .circle {
     svg {
@@ -333,6 +383,26 @@ nav {
 .inlineHeaderHome {
   height: auto !important;
   background-color: #fff !important;
+  z-index: 55;
+  transition: all 0.8s;
+
+  .header__mobBtnBox{
+
+    svg{
+      line{
+        stroke: #006068;
+      }
+    }
+
+  }
+
+  .header__itemsLogoBox {
+    svg {
+      path {
+        fill: #006068;
+      }
+    }
+  }
 
   .circle {
     svg {
@@ -361,9 +431,195 @@ nav {
     }
   }
 
-  .header__itemsBox--buttons{
-    svg{
-      circle{
+  .header__itemsBox--buttons {
+    svg {
+      circle {
+        fill: #006068 !important;
+      }
+    }
+  }
+
+  .header__itemsBox {
+    svg {
+      path {
+        fill: #006068;
+      }
+    }
+
+    a {
+      color: #006068;
+
+      &:after {
+        background-color: #006068;
+      }
+
+      p {
+        color: #006068;
+      }
+
+      span {
+        color: #006068;
+      }
+    }
+  }
+
+  .header__animateBox {
+    display: none;
+  }
+
+  .header__textBox {
+    display: none;
+  }
+
+  .header__navBox {
+    padding-bottom: 15px;
+    margin-top: 58px;
+
+    span {
+      a {
+        color: #006068;
+      }
+    }
+  }
+}
+
+.inlineHeaderHomeForFixed {
+  height: auto !important;
+  background-color: #fff !important;
+  z-index: 55;
+  transition: all 0.8s;
+
+  .header__itemsLogoBox {
+    svg {
+      path {
+        fill: #006068;
+      }
+    }
+  }
+
+  .circle {
+    svg {
+      circle {
+        fill: #006068 !important;
+      }
+    }
+  }
+
+  .lastItems {
+    > a {
+      background-color: #006068 !important;
+      color: #fff !important;
+    }
+
+    svg {
+      fill: #006068 !important;
+
+      #Ellipse_32 {
+        stroke: #006068 !important;
+      }
+
+      line {
+        stroke: #006068 !important;
+      }
+    }
+  }
+
+  .header__itemsBox--buttons {
+    svg {
+      circle {
+        fill: #006068 !important;
+      }
+    }
+  }
+
+  .header__itemsBox {
+    svg {
+      path {
+        fill: #006068;
+      }
+    }
+
+    a {
+      color: #006068;
+
+      &:after {
+        background-color: #006068;
+      }
+
+      p {
+        color: #006068;
+      }
+
+      span {
+        color: #006068;
+      }
+    }
+  }
+
+  .header__animateBox {
+    display: none;
+  }
+
+  .header__textBox {
+    display: none;
+  }
+
+  .header__navBox {
+    padding-bottom: 15px;
+    margin-top: 58px;
+
+    span {
+      a {
+        color: #006068;
+      }
+    }
+  }
+}
+
+.inlineHeaderHomeSign {
+  height: auto !important;
+  background-color: #fff !important;
+  z-index: 55;
+  transition: all 0.8s;
+
+  .header__itemsLogoBox {
+    svg {
+      path {
+        fill: #006068;
+      }
+    }
+  }
+
+  .circle {
+    svg {
+      circle {
+        fill: #006068 !important;
+      }
+    }
+  }
+
+  .lastItems {
+    > a {
+      background-color: #006068 !important;
+      color: #fff !important;
+    }
+
+    svg {
+      fill: #006068 !important;
+
+      #Ellipse_32 {
+        stroke: #006068 !important;
+      }
+
+      line {
+        stroke: #006068 !important;
+      }
+    }
+  }
+
+  .header__itemsBox--buttons {
+    svg {
+      circle {
         fill: #006068 !important;
       }
     }
@@ -418,9 +674,151 @@ nav {
 }
 
 .fixedTop {
-  position: fixed;
+  position: fixed !important;
   width: 100% !important;
   top: 0 !important;
   left: 0 !important;
   z-index: 656565;
+
+  .header__mobBtnBox {
+    svg {
+      line {
+        stroke: #006068 !important;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .header__flexHeader:after {
+      display: none;
+    }
+  }
+  
+}
+
+// sliders
+
+// mob menu
+
+.noTransform {
+  transform: unset !important;
+  transition: all 0.7s;
+}
+
+.overflowHidden {
+  overflow-y: hidden;
+}
+
+.activeSign {
+  transition: all 0.5s;
+  opacity: 1 !important;
+  z-index: unset !important;
+  transform: unset !important;
+}
+
+.subMenuProfile {
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-150%);
+
+  .subMenu__left {
+    padding-left: 40px;
+
+    &:first-child {
+      h4 {
+        font-family: "Freight Big Pro";
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-family: "Mark Pro Regular";
+          font-weight: normal;
+        }
+      }
+
+      .header__profile {
+        > div {
+          &:not(:last-child) {
+            margin-bottom: 25px;
+          }
+        }
+
+        p {
+          display: flex;
+
+          span {
+            // width: 50%;
+
+            min-width: 160px;
+
+            &:first-child {
+              font-family: "Mark Pro Regular";
+              font-size: 16px;
+              color: #505050;
+            }
+
+            &:last-child {
+              text-align: left;
+              font-family: "Freight Big Pro";
+              font-size: 16px;
+              color: #006068;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      p {
+        font-family: "Mark Pro Regular";
+        font-size: 16px;
+      }
+
+      a {
+        width: 190px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Mark Pro Medium";
+        color: #006068;
+        font-size: 12px;
+        border: 1px solid #006068;
+      }
+    }
+  }
+}
+
+.signInOff {
+  border: 1px solid #006068 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding: 2px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block !important;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+.hoverBtn {
+  &:hover {
+    .header__searchBox {
+      transition: all 0.4s;
+      opacity: 1;
+      z-index: 5;
+    }
+  }
 }
