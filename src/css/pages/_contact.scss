@@ -128,18 +128,37 @@
   &__left {
     display: flex;
     flex-wrap: wrap;
+    
+   
+    .form-group{
+
+      width: calc(50% - 18px);
+    
+
+      &:nth-child(1){
+        margin-right: 35px;
+      }
+
+      &:nth-child(3){
+        margin-right: 35px;
+      }
+    }
+
+    .width100{
+      width: 100% ;
+    }
+
 
     @media (max-width: 765px) {
       flex-direction: column;
     }
 
     input {
-      width: calc(50% - 35px);
+     
       background-color: #eaefef;
       border: none;
       height: 38px;
       padding: 0 15px;
-      margin-top: 10px;
       color: #a3c4c6;
 
       &::placeholder {
@@ -190,5 +209,22 @@
         color: #a3c4c6;
       }
     }
+  }  
+}
+
+
+.contactSelf{
+
+  .contact__info{
+
+    .form-group{
+
+      @media(max-width:765px){
+        width: 100% !important;
+        margin-right: 0 !important;
+      }
+
+    }
   }
+
 }

@@ -5,9 +5,21 @@
   }
 
   .offers__items {
+    @media (max-width: 1455px) {
+      padding: 100px 82px;
+    }
 
-    @media(max-width:992px){
+    @media (max-width: 992px) {
       padding: 30px 20px;
+    }
+
+    .offers__items--right {
+
+      .d-flex {
+        @media(max-width:992px){
+          flex-direction: column;
+        }
+      }
     }
 
     &:nth-child(odd) {
@@ -26,9 +38,22 @@
   }
 
   .offers__buttonsBox {
+
+
+
+    &:not(:last-child) {
+      @media (max-width: 992px) {
+        margin-bottom: 15px;
+      }
+    }
+
     a {
       color: #fff;
       min-width: 180px;
+
+      @media(max-width:992px){
+        height: 34px;
+      }
     }
   }
 }

@@ -1,17 +1,113 @@
 .footer {
   background-color: #006068;
-  padding-top: 114px !important;
-  padding-bottom: 114px !important;
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
   display: flex;
 
+  audio{
+    display: none;
+  }
+
+  .closeFooterPopup {
+    position: absolute;
+    right: 43px;
+    top: 26px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__popup {
+    position: fixed;
+    width: 1152px;
+    height: 699px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 999999999;
+    padding: 109px 179px;
+    background-color: #f5f5f5;
+    display: none;
+
+    @media (max-width: 1201px) {
+      width: 852px;
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+      padding: 50px;
+      height: 400px !important;
+      overflow-y: scroll;
+    }
+
+    @media (max-height: 820px) {
+      height: 583px;
+    }
+
+    @media (max-height: 583px) {
+      height: 400px;
+      overflow-y: scroll;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Freight Big Pro";
+      color: #006068;
+      margin-bottom: 36px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: "Mark Pro Regular";
+      color: #505050;
+
+      @media (max-height: 820px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .footerFomrLast {
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 0 !important;
+
+      p {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   .header__toolsBox--music {
-    @media(max-width:992px){
+    @media (max-width: 992px) {
       display: none;
     }
   }
 
+  .footerFormGroup {
+    width: 100%;
+  }
+
   &__mob {
-    display: none;
+    display: none !important;
+
+    input {
+      display: none;
+      appearance: none;
+    }
 
     @media (max-width: 992px) {
       display: flex;
@@ -21,7 +117,7 @@
       font-size: 8px;
     }
 
-    svg{
+    svg {
       font-size: 10px;
       margin-right: 5px;
       margin-top: -4px;
@@ -36,6 +132,7 @@
   @media (max-width: 992px) {
     flex-direction: column;
     padding: 50px 20px !important;
+    padding-bottom: 78px !important;
   }
 
   .header__toolsBox--left {
@@ -84,6 +181,34 @@
       }
     }
 
+    p {
+      display: inline-flex;
+      align-items: center;
+      color: #fff;
+      font-size: 20px;
+      font-family: "Mark Pro Regular" !important;
+
+      @media (max-width: 1510px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+
+      input {
+        appearance: none;
+      }
+    }
+
+    .checkedRadio {
+      svg {
+        #Rectangle_184 {
+          fill: #fff;
+        }
+      }
+    }
+
     span {
       display: inline-flex;
       align-items: center;
@@ -106,9 +231,9 @@
   }
 
   &__form {
-    margin-top: 92px;
+    margin-top: 30px;
     display: flex;
-    margin-bottom: 159px;
+    margin-bottom: 95px;
     flex-direction: column;
 
     @media (max-width: 1210px) {
@@ -122,6 +247,32 @@
 
     form {
       display: flex;
+      flex-direction: column;
+
+      button {
+        border-radius: unset !important;
+      }
+
+      label {
+        display: inline-block;
+        margin-left: 15px;
+        color: #fff;
+      }
+    }
+
+    .checkedRadioMob {
+      svg {
+        #Rectangle_184 {
+          fill: #fff;
+        }
+      }
+    }
+
+    .footerRadioMob {
+      input {
+        appearance: none;
+        display: none;
+      }
     }
 
     input {
@@ -145,7 +296,7 @@
       }
 
       &::placeholder {
-        font-size: 23px;
+        font-size: 16px;
         color: #006068;
         font-family: "Mark Pro Regular";
 
@@ -157,7 +308,7 @@
 
     button {
       font-family: "Mark Pro Regular";
-      background-color: #00afaa;
+      background-color: #00afaa !important;
       width: 171px;
       height: 68px;
       border: none;
@@ -193,7 +344,7 @@
       &:not(:last-child) {
         margin-right: 31px;
 
-        @media(max-width:992px){
+        @media (max-width: 992px) {
           margin-right: 10px;
         }
       }
@@ -212,6 +363,48 @@
       align-items: center;
       flex-direction: row-reverse;
       margin-top: 25px;
+    }
+  }
+
+  &__mobBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 555;
+    padding: 0 20px;
+    height: 58px;
+    background-color: #fff;
+    display: none;
+
+    @media (max-width: 992px) {
+      display: flex;
+    }
+
+    a {
+      display: inline-flex;
+      flex-direction: column;
+      align-content: center;
+      margin-bottom: 0;
+      align-items: center;
+      font-size: 14px;
+      font-family: "Mark Pro Medium";
+      color: #006068;
+
+      svg {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.checkedRadioMob {
+  svg {
+    circle {
+      fill: #fff;
     }
   }
 }

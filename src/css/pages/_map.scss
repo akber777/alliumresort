@@ -37,6 +37,7 @@
   }
 
   &__right {
+    position: relative;
     width: 50%;
     height: 500px;
 
@@ -50,6 +51,60 @@
     #map {
       width: 100%;
       height: 100%;
+    }
+
+    #mapDirection{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__palaces {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5555;
+    height: 63px;
+
+    @media(max-width:992px){
+      width: 100%;
+      top: 0;
+    }
+
+    &--items{
+      position: relative;
+    }
+
+    svg{
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    select {
+      width: auto;
+      height: 63px;
+      padding: 0 25px;
+      appearance: none;
+      width: 363px;
+      background-color: #00AFAA;
+      color: #fff;
+      font-size: 20px;
+      font-family: "Mark Pro Regular";
+      border: none;
+
+
+      @media(max-width:992px){
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+        padding-left: 10px;
+      }
     }
   }
 
@@ -69,4 +124,29 @@
 
 .mapHeader {
   height: auto !important;
+}
+
+
+.distance{
+  position: absolute;
+  width: auto;
+  height: 100%;
+  background: #00afaa;
+  white-space: nowrap;
+  align-items: center;
+  display: none;
+  color: #fff;
+  font-size: 12px;
+  padding-right: 8px;
+
+
+  @media(max-width:992px){
+
+    padding-right: 8px;
+    left: 0;
+    top: 40px;
+    padding-left: 12px;
+
+  }
+
 }

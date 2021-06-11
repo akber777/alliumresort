@@ -12,8 +12,9 @@
 @import "./pages/arrival";
 @import "./pages/amenties";
 @import "./pages/staticPages";
-
-
+@import "./pages/search";
+@import "./pages/roomDetail";
+@import "./pages/notFound.scss";
 
 
 
@@ -32,9 +33,7 @@
 @import "./components/btn";
 @import "./components/card";
 
-
 // abstract
 @import "./abstract/mixin";
 @import "./abstract/base";
 @import "./abstract/font";
-

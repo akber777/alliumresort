@@ -164,6 +164,13 @@
   &__contactItems {
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    &:after{
+      position: absolute;
+      right: 0;
+      content:attr(data-alert);
+    }
 
     button {
       background-color: #006068;

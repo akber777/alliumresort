@@ -167,13 +167,14 @@ nav {
 
 .subMenu {
   position: absolute;
-  left: -226px;
   min-width: 1248px;
+  left: -226px;
   background-color: #fff;
+  display: none;
   padding: 58px;
   display: flex;
   z-index: 55555;
-  top: 19px;
+  top: 26px;
 
   &__left {
     width: 50%;
@@ -213,15 +214,22 @@ nav {
     margin-bottom: 25px;
 
     img {
-      width: 250px;
+      width: 124px;
       object-fit: cover;
       transition: all 0.8s;
+      height: 95px;
     }
   }
 
   &__info {
     position: relative;
     padding: 25px;
+    padding-top: 0;
+
+    @media (max-width: 992px) {
+      padding-top: 0;
+    }
+
     h5 {
       font-family: "Mark Pro Medium";
       font-size: 13px;
@@ -236,12 +244,32 @@ nav {
   }
 }
 
+.subMenuWeb {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .homeHeader {
   // height: 100vh !important;
   position: absolute;
   width: 100%;
   transition: all 0.8s;
-  z-index: 44444;
+  z-index: 4444;
+
+  .header__itemsLogoBox {
+    svg {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 1201px) {
+    z-index: 5;
+  }
+
   @media (max-width: 992px) {
     height: 415px !important;
   }
@@ -271,7 +299,11 @@ nav {
   position: relative;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 90px);
+
+  @media (max-height: 575px) {
+    height: 600px !important;
+  }
 
   @media (max-width: 992px) {
     height: 415px !important;
@@ -286,12 +318,12 @@ nav {
 
   .header__itemsLogoBox {
     svg {
+      display: block !important;
       path {
         fill: #006068;
       }
     }
   }
-
 
   .header__mobBtnBox {
     svg {
@@ -386,14 +418,18 @@ nav {
   z-index: 55;
   transition: all 0.8s;
 
-  .header__mobBtnBox{
+  .header__itemsLogoBox {
+    svg {
+      display: block !important;
+    }
+  }
 
-    svg{
-      line{
+  .header__mobBtnBox {
+    svg {
+      line {
         stroke: #006068;
       }
     }
-
   }
 
   .header__itemsLogoBox {
@@ -693,7 +729,6 @@ nav {
       display: none;
     }
   }
-  
 }
 
 // sliders
@@ -821,4 +856,541 @@ nav {
       z-index: 5;
     }
   }
+}
+
+.roomDetail {
+  .owl-nav {
+    @media (max-width: 575px) {
+      display: flex !important;
+      top: 25% !important;
+    }
+  }
+
+  .owl-prev {
+    @media (max-width: 575px) {
+      left: 0 !important;
+    }
+  }
+
+  .owl-next {
+    @media (max-width: 575px) {
+      right: 0 !important;
+    }
+  }
+}
+
+.ss-result {
+  .ss-result__title {
+    a {
+      color: #006068;
+      font-family: "Freight Big Pro";
+    }
+
+    .ss-result__badge {
+      color: #006068;
+      font-family: "Freight Big Pro";
+    }
+  }
+
+  .ss-result__url {
+    a {
+      color: #006068;
+      font-family: "Freight Big Pro";
+    }
+  }
+}
+
+.pagination {
+  li {
+    margin-left: 9px;
+
+    a {
+      color: #006068;
+    }
+
+    span {
+      color: #006068;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 1;
+}
+
+.sd {
+  position: relative;
+
+  img {
+    margin-right: 7px;
+  }
+
+  color: #fff !important;
+}
+
+.afterSd {
+  &:after {
+    position: absolute;
+    content: "";
+    right: -18px;
+    width: 1px;
+    height: 50%;
+    background-color: #fff;
+    top: 46%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    @media (max-width: 1201px) {
+      right: -11px;
+    }
+  }
+}
+
+.lastInpItem {
+  input {
+    text-align: center;
+    width: 30px;
+  }
+}
+
+.header__bookNowNew {
+  position: relative;
+  z-index: 555;
+  width: 1380px;
+  bottom: 45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.75);
+
+  @media (max-width: 1416px) {
+    width: 992px;
+  }
+
+  @media (max-width: 992px) {
+    display: none !important;
+  }
+
+  .wrapBookNow {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      width: 180px !important;
+      background-color: #006068;
+      border: none;
+      height: 90px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 15px;
+      line-height: 20px;
+      padding-top: 2px;
+      font-family: "Mark Pro Medium";
+
+      @media (max-width: 1201px) {
+        height: 60px;
+      }
+    }
+  }
+
+  .adultsInp {
+    display: inline-flex;
+    align-items: center;
+
+    input {
+      width: 30px;
+      text-align: center;
+    }
+
+    .adultsMinus {
+      margin-right: 1px;
+    }
+
+    .adultsPlus {
+      margin-left: 1px;
+    }
+
+    p {
+      cursor: pointer;
+      margin-bottom: 0 !important;
+
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  .header__bookNowNewWrapper {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color: #fff;
+    padding: 0 15px;
+    width: calc(100% - 180px);
+    padding-left: 20px;
+
+    // @media (max-width: 1500px) {
+    //   width: calc(100% - 390px);
+    //   padding-left: 0;
+    // }
+
+    // @media (max-width: 1201px) {
+    //   width: calc(100% - 180px);
+    //   display: flex !important;
+    //   height: 60px;
+    // }
+
+    &--items {
+      position: relative;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 1201px) {
+        height: 60px;
+      }
+
+      &:not(:last-child) {
+        &:after {
+          position: absolute;
+          content: "";
+          right: 21px;
+          width: 1px;
+          height: 58%;
+          background-color: #006068;
+          top: 57%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+
+      span {
+        font-size: 12px;
+        font-family: "Mark Pro Regular";
+        line-height: 18px;
+        color: #006068;
+        margin-bottom: 7px;
+
+        @media (max-width: 1201px) {
+          font-size: 10px;
+        }
+      }
+
+      input {
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+        font-family: "Mark Pro Regular";
+        line-height: 18px;
+        color: #006068;
+      }
+
+      width: calc(100% / 4);
+      display: flex;
+      flex-direction: column;
+      padding: 0 35px;
+
+      @media (max-width: 1500px) {
+        padding-left: 19px;
+      }
+
+      @media (max-width: 1201px) {
+        padding-left: 7px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+.lightpick__toolbar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.lightpick__month-title {
+  * {
+    font-family: "Freight Big Pro";
+    color: #006068;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 10;
+  }
+
+  select {
+    &:first-child {
+      width: 50%;
+    }
+  }
+}
+
+.lightpick__toolbar {
+  button {
+    color: #006068;
+    background-color: transparent;
+  }
+}
+
+.lightpick__select {
+  display: inline-flex !important;
+  align-items: center;
+
+  div {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 15px;
+
+    * {
+      font-family: "Freight Big Pro";
+      color: #006068;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 10;
+    }
+  }
+
+  svg {
+    fill: #006068 !important;
+  }
+}
+
+.lightpick {
+  border-radius: unset !important;
+  box-shadow: none !important;
+}
+
+.lightpick__days {
+  margin-top: 20px;
+
+  * {
+    font-family: "Mark Pro Regular";
+    color: #006068 !important;
+  }
+}
+
+.lightpick__days-of-the-week {
+  border-bottom: 1px solid #006068;
+  padding-bottom: 5px;
+  margin-top: 15px;
+
+  div {
+    color: #006068 !important;
+  }
+}
+
+.is-start-date {
+  background-color: #006068 !important;
+  color: #fff !important;
+  border-radius: 100% !important;
+  width: 29px !important;
+  height: 29px !important;
+}
+
+.is-in-range {
+  background-color: #006068 !important;
+  color: #fff !important;
+  opacity: 0.4;
+  border-radius: 100% !important;
+  width: 29px !important;
+  height: 29px !important;
+}
+
+.is-end-date {
+  background-color: #006068 !important;
+  color: #fff !important;
+  border-radius: 100% !important;
+  width: 29px !important;
+  height: 29px !important;
+}
+
+.lightpick__day {
+  box-shadow: unset !important;
+  transition: all 0.3s;
+  border-radius: 100% !important;
+  width: 29px !important;
+  height: 29px !important;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  padding-top: 4px !important;
+  padding-right: 1px !important;
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: #006068 !important;
+    color: #fff !important;
+    background-image: unset !important;
+  }
+}
+
+.childPopup {
+  position: absolute;
+  bottom: 90px;
+  background: #fff;
+  width: 219px;
+  left: -24px;
+  padding: 15px 15px;
+  z-index: 2;
+
+  @media (max-width: 1201px) {
+    bottom: 60px;
+  }
+}
+
+.childWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    margin-bottom: 0 !important;
+    cursor: pointer;
+  }
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.childAge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    margin-bottom: 0 !important;
+    cursor: pointer;
+  }
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.lastInpItem {
+  &:hover {
+    .childPopup {
+      display: block;
+    }
+  }
+}
+
+.childPopup {
+  display: none;
+}
+
+.childAge {
+  margin-top: 15px;
+}
+
+.playVideo {
+  width: 203px;
+  height: 50px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: "Mark Pro Medium";
+  color: #fff;
+  margin-top: 55px;
+  display: none;
+
+  @media (max-width: 724px) {
+    margin-top: 25px;
+  }
+
+  svg {
+    margin-right: 15px;
+  }
+}
+
+.welcomeHome {
+  @media (max-width: 1201px) {
+    padding-top: 100px !important;
+  }
+}
+
+.header__textBox {
+  @media (max-width: 724px) {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 77px;
+    z-index: 5;
+  }
+
+  @media(max-height:650px){
+    top: 52%;
+  }
+
+}
+
+.noneSearch {
+  @media (max-width: 992px) {
+    display: none !important;
+  }
+}
+
+.bookingMobile {
+  background-color: #006068 !important;
+  display: none !important;
+
+  @media (max-width: 992px) {
+    display: block !important;
+  }
+}
+
+.footer__form {
+  #notifications {
+    height: auto !important;
+    display: inline-block !important;
+  }
+}
+
+
+
+.fixedTop {
+  .bookingMobile{
+    display: inline-flex !important;
+  }
+}
+
+
+.muteMusic{
+  width: 28px;
+  display: none;
 }

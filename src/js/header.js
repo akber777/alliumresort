@@ -12,6 +12,8 @@ $(document).ready(function () {
       transform: "translateY(-150%)",
     });
 
+    localStorage.setItem('cookie',false)
+
     setTimeout(() => {
       $(".header__cookieBox").css({
         display: "none",
@@ -29,6 +31,7 @@ $(document).ready(function () {
 
   $(".header__mobBtnBox").on("click", function () {
     $(".header__mobMenuBox").toggleClass("noTransform");
+    $(".header__bookNowNew").fadeToggle()
 
     if (window.location.pathname.split("/").length === 2) {
       $("header").toggleClass("inlineHeader");
@@ -79,7 +82,7 @@ $(document).ready(function () {
 
   $(".signInMob").click(function () {
     $("header").toggleClass("inlineHeaderHomeSign");
-    
+
     if (
       $(".header__signIn").hasClass("activeSign") == false &&
       $(".header__registration").hasClass("activeSign") == false
@@ -93,12 +96,11 @@ $(document).ready(function () {
   $(".signInCloseMobil").click(function () {
     $(".signMob").fadeOut();
 
-    $('.header__registration').removeClass('activeSign')
+    $(".header__registration").removeClass("activeSign");
 
-    $('.header__registration').fadeOut()
+    $(".header__registration").fadeOut();
 
-    $('.registerMob').fadeOut();
-    
+    $(".registerMob").fadeOut();
 
     if (
       $(".header__signIn").hasClass("activeSign") == false &&
@@ -112,36 +114,34 @@ $(document).ready(function () {
     }
   });
 
-  $('.registerTabMOb').click(function(){
+  $(".registerTabMOb").click(function () {
+    $(".sigMOb").fadeOut();
 
-    $('.sigMOb').fadeOut()
+    $(".header__registration").addClass("activeSign");
 
-    $('.header__registration').addClass('activeSign')
+    $(".header__registration").fadeIn();
 
-    $('.header__registration').fadeIn()
+    $(".registerMob").fadeIn();
+  });
 
-    $('.registerMob').fadeIn();
+  $(".searchMobButton").click(function () {
+    $(".searchMob").fadeIn();
+  });
 
-  })
+  $(".profileMobOpenMenu").click(function () {
+    $(".sigMOb").fadeOut();
+
+    $(".subMenuProfile").addClass("activeSign");
+
+    $(".subMenuProfile").fadeIn();
+
+    $(".profileMob").fadeIn();
+  });
 
 
-  $('.searchMobButton').click(function(){
+  if(localStorage.getItem('cookie')!==null&& localStorage.getItem('cookie')=='false'){
+    $('.header__cookieBox').remove()
+  }
 
-    $('.searchMob').fadeIn()
-
-  })
-
-
-  $('.profileMobOpenMenu').click(function(){
-
-    $('.sigMOb').fadeOut()
-
-    $('.subMenuProfile').addClass('activeSign')
-
-    $('.subMenuProfile').fadeIn()
-
-    $('.profileMob').fadeIn();
-
-  })
 
 });
